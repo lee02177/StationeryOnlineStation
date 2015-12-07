@@ -23,7 +23,31 @@ public class CustomerDB extends DB {
             CustomerBean customer = new CustomerBean();
             customer.setId(rs.getInt("id") + "");
             customer.setName(rs.getString("name"));
+            customer.setUsername(rs.getString("username"));
+            customer.setPassword(rs.getString("password"));
             customer.setType("customer");
+            customer.setTel(rs.getString("tel"));
+            customer.setAddress(rs.getString("address"));
+            customer.setBonus(rs.getInt("bonus"));
+            customer.setCredit(rs.getInt("credit"));
+            return customer;
+        } else
+            return null;
+    }
+
+    public CustomerBean getByName(String name) throws SQLException {
+        ResultSet rs = executeQuery("SELECT * FROM customer WHERE username ='" + name + "'");
+        if (rs.next()) {
+            CustomerBean customer = new CustomerBean();
+            customer.setId(rs.getInt("id") + "");
+            customer.setName(rs.getString("name"));
+            customer.setUsername(rs.getString("username"));
+            customer.setPassword(rs.getString("password"));
+            customer.setType("customer");
+            customer.setTel(rs.getString("tel"));
+            customer.setAddress(rs.getString("address"));
+            customer.setBonus(rs.getInt("bonus"));
+            customer.setCredit(rs.getInt("credit"));
             return customer;
         } else
             return null;
@@ -43,6 +67,29 @@ public class CustomerDB extends DB {
         );
     }
 
+    public boolean update(String id, String name, String username, String password, String tel, String address, String bonus, String credit) {
+        return updateQuery("UPDATE customer SET "
+                + "name ='" + name + "' ,"
+                + "username ='" + username + "' ,"
+                + "password ='" + password + "' ,"
+                + "tel ='" + tel + "' ,"
+                + "address ='" + address + "' ,"
+                + "bonus =" + bonus + ", "
+                + "credit =" + credit + " "
+                + "WHERE id = " + id);
+    }
+
+    public boolean update(CustomerBean customerBean) {
+        return update(customerBean.getId(),
+                customerBean.getName(),
+                customerBean.getUsername(),
+                customerBean.getPassword(),
+                customerBean.getTel(),
+                customerBean.getAddress(),
+                customerBean.getBonus() + "",
+                customerBean.getCredit() + "");
+    }
+
 
     public boolean insert(CustomerBean customer) {
         return insert(customer.getId() + "",
@@ -53,10 +100,15 @@ public class CustomerDB extends DB {
                 customer.getCredit() + "");
     }
 
+    public boolean remove(String id)
+    {
+        return updateQuery("DELETE FROM customer WHERE id =" + id);
+    }
 
-    public boolean validate(String id, String password) throws SQLException {
+
+    public boolean validate(String username, String password) throws SQLException {
         ResultSet rs = executeQuery("SELECT * FROM customer where "
-                + "id = " + id + " AND "
+                + "username = '" + username + "' AND "
                 + "password = '" + password + "'");
         if (rs.next())
             return true;

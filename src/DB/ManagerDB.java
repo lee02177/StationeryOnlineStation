@@ -27,9 +27,9 @@ public class ManagerDB extends DB {
             return null;
     }
 
-    public boolean validate(String id, String password) throws SQLException {
+    public boolean validate(String username, String password) throws SQLException {
         ResultSet rs = executeQuery("SELECT * FROM manager where "
-                + " id = " + id + " AND "
+                + " username = '" + username + "' AND "
                 + " password = '" + password + "'");
         if (rs.next() )
             return true;

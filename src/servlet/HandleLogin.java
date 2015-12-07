@@ -30,22 +30,22 @@ public class HandleLogin extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
-        String id = req.getParameter("id");
+        String username = req.getParameter("username");
         String password = req.getParameter("password");
         RequestDispatcher dispatcher;
 
         try {
             if (action.equals("login")) {
-                if (id == null || id.equals("") || password == null || password.equals("")) {
+                if (username == null || username.equals("") || password == null || password.equals("")) {
                     dispatcher = req.getRequestDispatcher("/login_fail.jsp");
                     dispatcher.forward(req, resp);
-                } else if (mdb.validate(id, password)) {
-                    UserBean user = mdb.getById(id);
+                } else if (mdb.validate(username, password)) {
+                    UserBean user = mdb.getById("1");
                     req.setAttribute("user", user);
                     dispatcher = req.getRequestDispatcher("/login_success.jsp");
                     dispatcher.forward(req, resp);
-                } else if (cdb.validate(id, password)) {
-                    UserBean user = cdb.getById(id);
+                } else if (cdb.validate(username, password)) {
+                    UserBean user = cdb.getByName(username);
                     req.setAttribute("shoppingCart", new ShoppingCartBean());
                     req.setAttribute("user", user);
                     dispatcher = req.getRequestDispatcher("/login_success.jsp");

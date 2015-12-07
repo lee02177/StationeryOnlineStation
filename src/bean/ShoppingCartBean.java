@@ -16,6 +16,16 @@ public class ShoppingCartBean {
         return productlist.size();
     }
 
+    public int getTotalAmount()
+    {
+        int sum =0;
+        for(int i=0; i<productlist.size(); i++)
+        {
+            sum+= productlist.get(i).getPrice() * Integer.parseInt(quantitylist.get(i));
+        }
+        return sum;
+    }
+
     public ArrayList<ProductBean> getProductlist() {
         return productlist;
     }
