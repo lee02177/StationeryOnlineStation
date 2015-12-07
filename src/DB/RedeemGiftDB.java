@@ -13,7 +13,7 @@ public class RedeemGiftDB extends DB {
     }
 
     public ArrayList<RedeemGiftBean> getAll() {
-
+        return null;
     }
 
     public boolean insert(String id, String customerId, String giftId) {
@@ -24,10 +24,10 @@ public class RedeemGiftDB extends DB {
                 + ")");
     }
 
-    public boolean insert(RedeemGiftBean redeemGift)
-    {
+    public boolean insert(RedeemGiftBean redeemGift) {
         return insert(redeemGift.getId(),
-                redeemGift.get)
+                redeemGift.getCustomerId(),
+                redeemGift.getGiftId());
     }
 
 

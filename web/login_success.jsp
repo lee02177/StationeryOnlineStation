@@ -22,7 +22,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
 </head>
-<body>
+<body bgcolor="LightGray">
+<jsp:include page="hander.jsp"/>
 Successful login!
 <form action="index.jsp" method="post">
     <input type="submit" value="go to shopping"/>

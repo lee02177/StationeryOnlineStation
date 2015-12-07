@@ -2,8 +2,10 @@ package servlet;
 
 import DB.CustomerDB;
 import DB.GiftDB;
+import DB.RedeemGiftDB;
 import bean.CustomerBean;
 import bean.GiftBean;
+import bean.RedeemGiftBean;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,6 +22,7 @@ import java.util.ArrayList;
  */
 @WebServlet (urlPatterns = "/handleGift")
 public class HandleGift extends HttpServlet {
+    RedeemGiftDB rdb = new RedeemGiftDB();
     CustomerDB cdb = new CustomerDB();
     GiftDB gdb = new GiftDB();
 
@@ -50,7 +53,13 @@ public class HandleGift extends HttpServlet {
                 }
                 else
                 {
-
+                    RedeemGiftBean redeemGiftBean = new RedeemGiftBean();
+                    redeemGiftBean.setId(rdb.getLastId()+"");
+                    redeemGiftBean.setCustomerId(customer.getId());
+                    redeemGiftBean.setGiftId(gift.getId());
+                    rdb.insert(redeemGiftBean);
+                    dispatcher = req.getRequestDispatcher("/redeemSuccess.jsp");
+                    dispatcher.forward(req, resp);
                 }
             }
         } catch (SQLException e) {

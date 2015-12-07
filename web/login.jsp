@@ -11,7 +11,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
 </head>
-<body>
+<body bgcolor="LightGray">
+<jsp:include page="hander.jsp"/>
 <p align="center">Login account can place order</p>
 <form method="post" action="handleLogin">
     <input type="hidden" value="login" name="action"/>

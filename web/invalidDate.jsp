@@ -10,7 +10,8 @@
 <head>
     <title>Title</title>
 </head>
-<body>
+<body bgcolor="LightGray">
+<jsp:include page="hander.jsp"/>
 Invalid date!
 <form action="handleShoppingCart" method="post">
     <input type="hidden" name="action" value="buy">

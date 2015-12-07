@@ -10,7 +10,8 @@
 <head>
     <title>Title</title>
 </head>
-<body>
+<body bgcolor="LightGray">
+<jsp:include page="hander.jsp"/>
 Logout
 <%
     session.setAttribute("user", null);
