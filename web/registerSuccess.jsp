@@ -12,6 +12,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        Successful register
+        <form action="index.jsp">
+            <input type="submit" value="Back to home">
+        </form>
     </body>
 </html>

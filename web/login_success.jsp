@@ -6,11 +6,10 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <jsp:useBean id="user" type="bean.UserBean" scope="request"/>
+<jsp:useBean id="shoppingCart" type="bean.ShoppingCartBean" scope="request"/>
 <%
-    if (user == null)
-        session.setAttribute("user", null);
-    else
-        session.setAttribute("user", user);
+    session.setAttribute("user", user);
+    session.setAttribute("shoppingCart"+user.getId(), shoppingCart);
 %>
 <!DOCTYPE html>
 <html>

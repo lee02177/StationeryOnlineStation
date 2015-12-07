@@ -2,6 +2,7 @@ package servlet;
 
 import DB.CustomerDB;
 import DB.ManagerDB;
+import bean.ShoppingCartBean;
 import bean.UserBean;
 
 import javax.servlet.RequestDispatcher;
@@ -22,6 +23,11 @@ public class HandleLogin extends HttpServlet {
     CustomerDB cdb = new CustomerDB();
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doPost(req, resp);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
         String id = req.getParameter("id");
@@ -40,6 +46,7 @@ public class HandleLogin extends HttpServlet {
                     dispatcher.forward(req, resp);
                 } else if (cdb.validate(id, password)) {
                     UserBean user = cdb.getById(id);
+                    req.setAttribute("shoppingCart", new ShoppingCartBean());
                     req.setAttribute("user", user);
                     dispatcher = req.getRequestDispatcher("/login_success.jsp");
                     dispatcher.forward(req, resp);

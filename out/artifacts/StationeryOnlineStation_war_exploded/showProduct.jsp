@@ -12,40 +12,37 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Stationery Station</title>
 </head>
-<body>
+<body bgcolor="LightGray">
+<jsp:include page="hander.jsp"/>
 <%
-    if ((session.getAttribute("userId") == null) || (session.getAttribute("userId") == "")) {
-%>
-asdfbadf
-<%
-} else {
-%>
-abcabcabc
-<%
-    }
+    //    if ((session.getAttribute("userId") == null) || (session.getAttribute("userId") == "")) {
 %>
 
 <%
     ArrayList<ProductBean> itemList
             = (ArrayList<ProductBean>) request.getAttribute("itemList");
 
-    out.println(itemList.size() + " elements in table customer");
-
     out.println("<table border='1' cellspacing='0'>");
-    out.println("<th>Item Number</th>"
-            + "<th>Item Name</th>"
+    out.println("<th>Item Name</th>"
             + "<th>Category</th>"
             + "<th>Description</th>"
             + "<th>Price</th>");
+    if (session.getAttribute("user") != null) {
+        out.println("<th>&nbsp;</th>"
+                + "<th>&nbsp;</th>");
+    }
+
     for (int i = 0; i < itemList.size(); i++) {
         ProductBean p = itemList.get(i);
         out.println("<tr>");
-        out.println("<td>" + p.getId() + "</td>");
         out.println("<td>" + p.getName() + "</td>");
         out.println("<td>" + p.getPrice() + "</td>");
         out.println("<td>" + p.getCategory() + "</td>");
         out.println("<td>" + p.getInfo() + "</td>");
-
+        if (session.getAttribute("user") != null) {
+            out.println("<td>add</td>");
+            out.println("<td>buy</td>");
+        }
         out.println("</tr>");
     }
     out.println("</table>");

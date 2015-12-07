@@ -23,21 +23,44 @@ public class CustomerDB extends DB {
             CustomerBean customer = new CustomerBean();
             customer.setId(rs.getInt("id") + "");
             customer.setName(rs.getString("name"));
-            customer.setType(rs.getString("customer"));
+            customer.setType("customer");
             return customer;
-        }
-        else
+        } else
             return null;
+    }
+
+    public boolean insert(String id, String name, String tel, String address, String bonus, String credit) {
+        return updateQuery("INSERT INTO customer VALUES("
+                + id
+                + ", '" + name + "'"
+                + ", null"
+                + ", null"
+                + ", '" + tel + "'"
+                + ", '" + address + "'"
+                + ", " + bonus
+                + ", " + credit
+                + ")"
+        );
+    }
+
+
+    public boolean insert(CustomerBean customer) {
+        return insert(customer.getId() + "",
+                customer.getName(),
+                customer.getTel(),
+                customer.getAddress(),
+                customer.getBonus() + "",
+                customer.getCredit() + "");
     }
 
 
     public boolean validate(String id, String password) throws SQLException {
         ResultSet rs = executeQuery("SELECT * FROM customer where "
-                + "id = " + id
-                + " password = '" + password + "'");
-        if (rs == null)
-            return false;
-        else
+                + "id = " + id + " AND "
+                + "password = '" + password + "'");
+        if (rs.next())
             return true;
+        else
+            return false;
     }
 }

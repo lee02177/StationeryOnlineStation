@@ -19,15 +19,15 @@
     <body>
         <fieldset>
             <legend>Registraion Form</legend>
-            <form method="post" action = "handleCustomer?action=registerSuccess">
+            <form method="post" action = "handleRegister">
                 Full Name:   <input name="name" type="text" ><br/><br/>
-                Username:    <input name="id" type="text" ><br/><br/>
-                Password:    <input name="password" type="password" ><br/><br/>
                 Phone No:<input name="tel" type="text" ><br/><br/>
                 Address:     <input name="address" type="text" ><br/><br/>
-                <input name="bonus" type="hidden" value="0" >
+                Credit Amount: <input name="credit" type="text" ><br>
                 <input type="submit" value="Register" /> &nbsp;
-                <button onclick="goBack()">Back</button>
+            </form>
+            <form action="index.jsp">
+                <input type="submit" value="Back">
             </form>
         </fieldset>
     </body>

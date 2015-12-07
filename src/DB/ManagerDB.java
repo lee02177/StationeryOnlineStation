@@ -29,12 +29,12 @@ public class ManagerDB extends DB {
 
     public boolean validate(String id, String password) throws SQLException {
         ResultSet rs = executeQuery("SELECT * FROM manager where "
-                + " id = " + id
+                + " id = " + id + " AND "
                 + " password = '" + password + "'");
-        if (rs == null)
-            return false;
-        else
+        if (rs.next() )
             return true;
+        else
+            return false;
     }
 
     @Override

@@ -12,6 +12,13 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        Invalid data!
+        <br>
+        <form action="register.jsp" method="post">
+            <input type="submit" value="Register again">
+        </form>
+        <form action="index.jsp">
+            <input type="submit" value="Back to home">
+        </form>
     </body>
 </html>
