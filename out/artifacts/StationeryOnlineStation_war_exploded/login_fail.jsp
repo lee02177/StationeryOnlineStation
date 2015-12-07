@@ -1,8 +1,3 @@
-<%-- 
-    Document   : login_fail
-    Created on : 2015/12/3, 下午 07:09:19
-    Author     : Lee
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
