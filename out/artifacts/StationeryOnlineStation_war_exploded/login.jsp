@@ -16,7 +16,7 @@
 <form method="post" action="handleLogin">
     <input type="hidden" value="login" name="action"/>
     Username:
-    <input type="text" name="id" maxlength="10" size="15"><br/>
+    <input type="text" name="username" maxlength="10" size="15"><br/>
 
     Password:
 
