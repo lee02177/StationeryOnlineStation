@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="460d0246-be25-4d87-8e23-345050811ffe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/CustomerDB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/CustomerDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/DB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/DB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/GiftDB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/GiftDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/ManagerDB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/ManagerDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/OrderDB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/OrderDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/OrderProductDB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/OrderProductDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/ProductDB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/ProductDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/RedeemGiftDB.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/DB/RedeemGiftDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/CustomerBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/CustomerBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/GiftBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/GiftBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/ManagerBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/ManagerBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/OrderBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/OrderBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/OrderProductBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/OrderProductBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/ProductBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/ProductBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/RedeemGiftBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/RedeemGiftBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/UserBean.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/bean/UserBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleCustomer.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleCustomer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleLogin.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleLogin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleOrder.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleOrder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleProduct.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleRegister.class" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/WEB-INF/classes/servlet/HandleRegister.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/CustomerDB.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/CustomerDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/DB.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/DB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/ManagerDB.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/ManagerDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/OrderDB.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/OrderDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/OrderProductDB.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/OrderProductDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/ProductDB.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/ProductDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/RedeemGiftDB.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/DB/RedeemGiftDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/CustomerBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/CustomerBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/GiftBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/GiftBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/ManagerBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/ManagerBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/OrderBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/OrderBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/OrderProductBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/OrderProductBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/ProductBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/ProductBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/RedeemGiftBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/RedeemGiftBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/UserBean.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/bean/UserBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleCustomer.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleCustomer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleLogin.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleLogin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleOrder.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleOrder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleProduct.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleRegister.class" afterPath="$PROJECT_DIR$/out/production/StationeryOnlineStation/servlet/HandleRegister.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/login_fail.jsp" afterPath="$PROJECT_DIR$/out/artifacts/StationeryOnlineStation_war_exploded/login_fail.jsp" />
     </list>
     <ignored path="StationeryOnlineStation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -853,7 +811,7 @@
       <workItem from="1449426337837" duration="2656000" />
       <workItem from="1449429314096" duration="335000" />
       <workItem from="1449464063962" duration="8988000" />
-      <workItem from="1449474862401" duration="35722000" />
+      <workItem from="1449474862401" duration="35884000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1449473955958</created>
@@ -921,11 +879,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449520863800</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated">
+      <created>1449521201429</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1449521201429</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52718000" />
+    <option name="totallyTimeSpent" value="52880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -951,7 +915,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39772728" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39772728" sideWeight="0.49676898" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
