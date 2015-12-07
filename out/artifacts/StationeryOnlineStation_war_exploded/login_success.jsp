@@ -1,4 +1,5 @@
-<%--
+<%@ page import="bean.CustomerBean" %>
+<%@ page import="bean.ShoppingCartBean" %><%--
     Document   : login_success
     Created on : 2015/12/3, 下午 07:21:19
     Author     : Lee
@@ -6,10 +7,14 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <jsp:useBean id="user" type="bean.UserBean" scope="request"/>
-<jsp:useBean id="shoppingCart" type="bean.ShoppingCartBean" scope="request"/>
 <%
     session.setAttribute("user", user);
-    session.setAttribute("shoppingCart"+user.getId(), shoppingCart);
+    if (user instanceof CustomerBean)
+    {
+        ShoppingCartBean shoppingCart = new ShoppingCartBean();
+        session.setAttribute("shoppingCart" + user.getId(), shoppingCart);
+    }
+
 %>
 <!DOCTYPE html>
 <html>

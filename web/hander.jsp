@@ -21,7 +21,7 @@
     <a href="handleProduct?action=list">Products</a>
     <a href="handleGift?action=list">Gifts</a>
     <a href="">My order</a>
-    <a href="">Shopping cart</a>
+    <a href="handleShoppingCart?action=list">Shopping cart</a>
     <div>
         Hello,
         <a href=""><%=user.getName()%>

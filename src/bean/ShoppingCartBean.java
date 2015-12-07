@@ -12,7 +12,25 @@ public class ShoppingCartBean {
     public ShoppingCartBean() {
     }
 
+    public int size() {
+        return productlist.size();
+    }
+
+    public ArrayList<ProductBean> getProductlist() {
+        return productlist;
+    }
+
+    public ArrayList<String> getQuantityList() {
+        return quantitylist;
+    }
+
     public void add(ProductBean product, String quantity) {
+        for (int i = 0; i < productlist.size(); i++) {
+            if (productlist.get(i).getId() == (product.getId())) {
+                quantitylist.set(i, (Integer.parseInt(quantitylist.get(i)) + Integer.parseInt(quantity)) + "");
+                return;
+            }
+        }
         productlist.add(product);
         quantitylist.add(quantity);
     }

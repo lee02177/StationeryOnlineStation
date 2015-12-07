@@ -17,36 +17,44 @@
 <%
     //    if ((session.getAttribute("userId") == null) || (session.getAttribute("userId") == "")) {
 %>
+<div style="display: flex; justify-content: space-between;">
 
-<%
-    ArrayList<ProductBean> itemList
-            = (ArrayList<ProductBean>) request.getAttribute("itemList");
+    <div>
+        <%
+            ArrayList<ProductBean> itemList
+                    = (ArrayList<ProductBean>) request.getAttribute("itemList");
 
-    out.println("<table border='1' cellspacing='0'>");
-    out.println("<th>Item Name</th>"
-            + "<th>Category</th>"
-            + "<th>Description</th>"
-            + "<th>Price</th>");
-    if (session.getAttribute("user") != null) {
-        out.println("<th>&nbsp;</th>"
-                + "<th>&nbsp;</th>");
-    }
+            out.println("<table border='1' cellspacing='0'>");
+            out.println("<th>Item Name</th>"
+                    + "<th>Category</th>"
+                    + "<th>Price</th>"
+                    + "<th>Description</th>"
+            );
+            if (session.getAttribute("user") != null) {
+                out.println("<th>&nbsp;</th>"
+                        + "<th>&nbsp;</th>");
+            }
 
-    for (int i = 0; i < itemList.size(); i++) {
-        ProductBean p = itemList.get(i);
-        out.println("<tr>");
-        out.println("<td>" + p.getName() + "</td>");
-        out.println("<td>" + p.getPrice() + "</td>");
-        out.println("<td>" + p.getCategory() + "</td>");
-        out.println("<td>" + p.getInfo() + "</td>");
-        if (session.getAttribute("user") != null) {
-            out.println("<td>add</td>");
-            out.println("<td>buy</td>");
-        }
-        out.println("</tr>");
-    }
-    out.println("</table>");
-%>
+            for (int i = 0; i < itemList.size(); i++) {
+                ProductBean p = itemList.get(i);
+                out.println("<tr>");
+                out.println("<td>" + p.getName() + "</td>");
+                out.println("<td>" + p.getCategory() + "</td>");
+                out.println("<td>" + p.getPrice() + "</td>");
+                out.println("<td>" + p.getInfo() + "</td>");
+                if (session.getAttribute("user") != null) {
+                    out.println("<td><a href='handleShoppingCart?action=add&id=" + p.getId() + "'>add</a></td>");
+                    out.println("<td><a href='handleShoppingCart?action=buy&id=" + p.getId() + "'>buy</a></td>");
+                }
+                out.println("</tr>");
+            }
+            out.println("</table>");
+        %>
+    </div>
+    <div>
+        <jsp:include page="showShoppingCart.jsp"/>
+    </div>
+</div>
 
 </body>
 </html>
