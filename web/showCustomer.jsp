@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="ict.bean.*, java.util.*" %>
+<%@page import="bean.*, java.util.*" %>
 
 <!DOCTYPE html>
 <html>

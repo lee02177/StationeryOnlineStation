@@ -1,9 +1,3 @@
-<%-- 
-    Document   : showOrder
-    Created on : Nov 29, 2015, 5:06:44 PM
-    Author     : IBM888HK
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@page import="bean.*, java.util.*" %>
 <%@ page import="java.sql.SQLException" %>

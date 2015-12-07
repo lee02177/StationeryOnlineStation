@@ -12,9 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 @WebServlet(urlPatterns = "/handleRegister")
 public class HandleRegister extends HttpServlet {
     CustomerDB db = new CustomerDB();

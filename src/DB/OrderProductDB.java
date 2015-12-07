@@ -2,9 +2,7 @@ package DB;
 
 import bean.OrderProductBean;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public class OrderProductDB extends DB {
     public OrderProductDB() {
     }

@@ -4,9 +4,7 @@ import DB.GiftDB;
 
 import java.sql.SQLException;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public class RedeemGiftBean  {
     String id;
     String customerId;

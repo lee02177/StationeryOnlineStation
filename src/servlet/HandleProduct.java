@@ -13,9 +13,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 @WebServlet(name = "HandleProduct", urlPatterns = {"/handleProduct"})
 public class HandleProduct extends HttpServlet {
     private ProductDB db = new ProductDB();

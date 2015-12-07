@@ -17,9 +17,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 @WebServlet (urlPatterns = "/handleGift")
 public class HandleGift extends HttpServlet {
     RedeemGiftDB rdb = new RedeemGiftDB();

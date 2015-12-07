@@ -1,8 +1,6 @@
 package bean;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public abstract class UserBean {
     String id;
     String name;

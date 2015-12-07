@@ -2,9 +2,7 @@ package bean;
 
 import java.io.Serializable;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public class ProductBean implements Serializable {
     int id;
     String name;

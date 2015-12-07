@@ -9,9 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public class OrderDB extends DB {
     public OrderDB() {
     }

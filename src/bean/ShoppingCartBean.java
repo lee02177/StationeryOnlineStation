@@ -2,9 +2,6 @@ package bean;
 
 import java.util.ArrayList;
 
-/**
- * Created by Lee on 7/12/2015.
- */
 public class ShoppingCartBean {
     ArrayList<ProductBean> productlist = new ArrayList<ProductBean>();
     ArrayList<String> quantitylist = new ArrayList<String>();

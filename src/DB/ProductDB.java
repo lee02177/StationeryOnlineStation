@@ -6,9 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public class ProductDB extends DB {
 
     public ProductDB() {

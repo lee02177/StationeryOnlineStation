@@ -6,9 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public abstract class DB extends HttpServlet {
     //    String url = "jdbc:mysql://localhost:3306/assdb";
     String url = "jdbc:mysql://localhost:3306/assdb";

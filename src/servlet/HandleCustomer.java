@@ -12,9 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-/**
- * Created by Lee on 7/12/2015.
- */
 @WebServlet(urlPatterns = "/handleCustomer")
 public class HandleCustomer extends HttpServlet {
     CustomerDB cdb = new CustomerDB();

@@ -1,11 +1,5 @@
 <%@ page import="bean.ShoppingCartBean" %>
-<%@ page import="bean.CustomerBean" %><%--
-  Created by IntelliJ IDEA.
-  User: Lee
-  Date: 7/12/2015
-  Time: 下午11:04
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="bean.CustomerBean" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>

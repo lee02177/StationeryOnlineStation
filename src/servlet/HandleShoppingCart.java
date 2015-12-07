@@ -14,9 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 @WebServlet(urlPatterns = "/handleShoppingCart")
 public class HandleShoppingCart extends HttpServlet {
     ProductDB db = new ProductDB();

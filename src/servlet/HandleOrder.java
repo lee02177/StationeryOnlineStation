@@ -15,9 +15,6 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- * Created by Lee on 7/12/2015.
- */
 @WebServlet(urlPatterns = "/handleOrder")
 public class HandleOrder extends HttpServlet {
     CustomerDB cdb = new CustomerDB();

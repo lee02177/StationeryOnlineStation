@@ -5,9 +5,7 @@ import bean.CustomerBean;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- * Created by Lee on 7/12/2015.
- */
+
 public class CustomerDB extends DB {
     public CustomerDB() {
     }
