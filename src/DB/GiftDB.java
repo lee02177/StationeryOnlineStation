@@ -18,17 +18,24 @@ public class GiftDB extends DB {
         return resultToList(rs);
     }
 
-    public GiftBean getById()
-    {
-        return null;
+    public GiftBean getById(String id) throws SQLException {
+        ResultSet rs = executeQuery("SELECT * FROM gift WHERE id = " + id);
+        if (rs.next()) {
+            GiftBean gift = new GiftBean();
+            gift.setId(rs.getInt("id")+"");
+            gift.setName(rs.getString("name"));
+            gift.setPointsRequired(rs.getInt("pointsRequired"));
+            return gift;
+        } else {
+            return null;
+        }
     }
 
     public ArrayList<GiftBean> resultToList(ResultSet rs) throws SQLException {
         ArrayList<GiftBean> gifts = new ArrayList<GiftBean>();
-        while(rs.next())
-        {
+        while (rs.next()) {
             GiftBean gift = new GiftBean();
-            gift.setId(rs.getInt("id")+ "");
+            gift.setId(rs.getInt("id") + "");
             gift.setName(rs.getString("name"));
             gift.setPointsRequired(rs.getInt("pointsRequired"));
             gifts.add(gift);

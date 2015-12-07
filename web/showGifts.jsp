@@ -27,7 +27,7 @@
         out.println("<td>" + g.getName() + "</td>");
         out.println("<td>" + g.getPointsRequired() + "</td>");
         if (session.getAttribute("user") != null)
-            out.println("<td>redeem</td>");
+            out.println("<td><a href='handleGift?action=redeem&id=" + g.getId() + "'>redeem</a></td>");
         out.println("</tr>");
     }
     out.println("</table>");

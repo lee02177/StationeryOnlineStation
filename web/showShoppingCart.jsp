@@ -4,19 +4,22 @@
 <%@ page import="java.util.ArrayList" %>
 <%
     String aaa = (String) request.getAttribute("aaa");
-    if(aaa == null)
+    if (aaa == null)
         aaa = "888";
     if (session.getAttribute("user") != null) {
         CustomerBean user = (CustomerBean) session.getAttribute("user");
         ShoppingCartBean shoppingCart = (ShoppingCartBean) session.getAttribute("shoppingCart" + user.getId());
-        out.println("<table border='1'>"
-                + "<caption>Shopping Cart</caption>"
-                + "<tr>"
+        out.println("<table border='1'>");
+        if (!aaa.equals("999"))
+            out.println("<caption>Shopping Cart</caption>");
+        else
+            out.println("<caption>Your order</caption>");
+        out.println("<tr>"
                 + "<th>Product Name</th>"
                 + "<th>Price</th>"
                 + "<th>Quantity</th>"
                 + "<th>Subtotal</th>");
-        if (shoppingCart.size() > 0 &&  !aaa.equals("999"))
+        if (shoppingCart.size() > 0 && !aaa.equals("999"))
             out.println("<th>&nbsp;</th>");
         out.println("<tr>");
         if (shoppingCart.size() > 0) {

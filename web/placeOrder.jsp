@@ -22,9 +22,7 @@
     CustomerBean user = (CustomerBean) session.getAttribute("user");
     ShoppingCartBean shoppingCart = (ShoppingCartBean) session.getAttribute("shoppingCart" + user.getId());
     int i = shoppingCart.getTotalAmount();
-
-    out.println("You can get " + ((int) (i / 1000)) * 100 + "bonus");
-
+    out.println("You can get " + ((int) (i / 1000)) * 100 + " bonus");
 %>
 <div>
     <form action="handleOrder" method="post">
