@@ -32,6 +32,7 @@ public class HandleOrder extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
+        CustomerBean user = (CustomerBean) req.getSession().getAttribute("user");
         RequestDispatcher dispatcher;
         try {
             if (action.equals("place")) {
@@ -44,7 +45,6 @@ public class HandleOrder extends HttpServlet {
                     dispatcher = req.getRequestDispatcher("/invalidDate.jsp");
                     dispatcher.forward(req, resp);
                 } else {
-                    CustomerBean user = (CustomerBean) req.getSession().getAttribute("user");
                     CustomerBean customer = cdb.getById(user.getId());
                     ShoppingCartBean scb = (ShoppingCartBean) req.getSession().getAttribute("shoppingCart" + user.getId());
                     if (customer.getCredit() < scb.getTotalAmount()) {
@@ -78,10 +78,17 @@ public class HandleOrder extends HttpServlet {
                 }
             }else if (action.equals("list"))
             {
-                ArrayList<OrderBean> orderlist = new OrderDB().getAll();
+                ArrayList<OrderBean> orderlist = new OrderDB().getByCustomerId(user.getId());
                 req.setAttribute("orderlist", orderlist);
                 dispatcher = req.getRequestDispatcher("/showOrder.jsp");
                 dispatcher.forward(req, resp);
+            }
+            else if (action.equals("cancel"))
+            {
+                String id = req.getParameter("id");
+                odb.cancelOrderById(id);
+                resp.sendRedirect(req.getContextPath() + "/handleOrder?action=list");
+                return;
             }
         } catch (SQLException e) {
             e.printStackTrace();

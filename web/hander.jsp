@@ -23,7 +23,7 @@
     <a href="handleOrder?action=list">My order</a>
     <div>
         Hello,
-        <a href=""><%=user.getName()%>
+        <a href="handleCustomer?action=list"><%=user.getName()%>
         </a>
     </div>
     <%

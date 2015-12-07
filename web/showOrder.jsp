@@ -18,17 +18,20 @@
 <%
     try {
         ArrayList<OrderBean> orderlist
-                = (ArrayList<OrderBean>)request.getAttribute("orderlist");
+                = (ArrayList<OrderBean>) request.getAttribute("orderlist");
 
         out.println("you have " + orderlist.size() + " order");
 
 
         out.println("<table border='1' cellspacing='0'>");
-
+        out.println("<tr>");
         out.println("<th>Order No.</th>"
-                + "<th>Client ID</th>"
+                + "<th>Client </th>"
                 + "<th>Delivery Date</th>"
                 + "<th>Status</th>");
+        if (orderlist.size() > 1)
+            out.println("<th>&nbsp;</th>");
+        out.println("</tr>");
         for (int i = 0; i < orderlist.size(); i++) {
             OrderBean ob = orderlist.get(i);
             CustomerBean c = ob.getCustomerById();
@@ -37,6 +40,10 @@
             out.println("<td>" + c.getName() + "</td>");
             out.println("<td>" + ob.getDate() + "</td>");
             out.println("<td>" + ob.getStatus() + "</td>");
+            if (ob.getStatus().equals("cancel"))
+                out.println("<td>&nbsp;</td>");
+            else
+                out.println("<td><a href='handleOrder?action=cancel&id=" + ob.getId() + "'>x</a></td>");
             out.println("</tr>");
         }
         out.println("</table>");

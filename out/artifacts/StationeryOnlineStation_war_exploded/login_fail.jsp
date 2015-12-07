@@ -11,7 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body bgcolor="LightGray">
+    <jsp:include page="hander.jsp"/>
         Login fail
         <br/>
         <form action="login.jsp">

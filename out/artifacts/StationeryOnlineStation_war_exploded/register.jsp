@@ -16,7 +16,8 @@
             }
         </script>
     </head>
-    <body>
+    <body bgcolor="LightGray">
+    <jsp:include page="hander.jsp"/>
         <fieldset>
             <legend>Registraion Form</legend>
             <form method="post" action = "handleRegister">
